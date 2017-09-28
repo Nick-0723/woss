@@ -1,0 +1,26 @@
+<!ELEMENT configuration (logger?,gather?,client?,dbStore?,server?,backUp?)>
+    <!ELEMENT logger (propertiesFile)>
+    <!ATTLIST logger class CDATA #REQUIRED>
+        <!ELEMENT propertiesFile (#PCDATA)>
+
+    <!ELEMENT gather (sourceData,canliushujuFile)>
+    <!ATTLIST gather class CDATA #REQUIRED>
+        <!ELEMENT sourceData (#PCDATA)>
+        <!ELEMENT canliushujuFile (#PCDATA)>
+
+    <!ELEMENT client (host,port,tempFile)>
+    <!ATTLIST client class CDATA #REQUIRED>
+        <!ELEMENT host (#PCDATA)>
+        <!ELEMENT port (#PCDATA)>
+        <!ELEMENT tempFile (#PCDATA)>
+
+    <!ELEMENT dbStore (#PCDATA)>
+    <!ATTLIST dbStore class CDATA #REQUIRED>
+
+    <!ELEMENT server (server_tempFile)>
+    <!ATTLIST server class CDATA #REQUIRED>
+        <!ELEMENT server_tempFile (#PCDATA)>
+
+    <!ELEMENT backUp (path)>
+    <!ATTLIST backUp class CDATA #REQUIRED>
+        <!ELEMENT path (#PCDATA)>

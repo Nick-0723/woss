@@ -1,0 +1,111 @@
+[woss_client] -2017-09-15 10:41:36,516 [INFO]   -------开始采集数据
+[woss_client] -2017-09-15 10:41:36,516 [INFO]   -------读取备份数据
+[woss_client] -2017-09-15 10:41:36,516 [ERROR]   -------系统启动报错
+java.lang.NullPointerException
+	at com.briup.client.impl.GatherImpl.gather(GatherImpl.java:53)
+	at com.briup.main.ClientMain.main(ClientMain.java:13)
+[woss_client] -2017-09-15 10:42:27,248 [INFO]   -------开始采集数据
+[woss_client] -2017-09-15 10:42:27,248 [INFO]   -------读取备份数据
+[woss_client] -2017-09-15 10:42:27,248 [ERROR]   -------系统启动报错
+java.lang.NullPointerException
+	at com.briup.client.impl.GatherImpl.gather(GatherImpl.java:54)
+	at com.briup.main.ClientMain.main(ClientMain.java:13)
+[woss_client] -2017-09-15 10:43:01,459 [INFO]   -------开始采集数据
+[woss_client] -2017-09-15 10:43:01,459 [INFO]   -------读取备份数据
+[woss_client] -2017-09-15 10:43:01,474 [ERROR]   -------系统启动报错
+java.lang.NullPointerException
+	at com.briup.client.impl.GatherImpl.gather(GatherImpl.java:55)
+	at com.briup.main.ClientMain.main(ClientMain.java:13)
+[woss_client] -2017-09-15 10:44:50,050 [INFO]   -------开始采集数据
+[woss_client] -2017-09-15 10:44:50,050 [INFO]   -------读取备份数据
+[woss_client] -2017-09-15 10:44:50,534 [INFO]   -------对不是同一天上下线的用户进行处理
+[woss_client] -2017-09-15 10:44:50,628 [INFO]   -------开始备份数据.....
+[woss_client] -2017-09-15 10:44:50,690 [INFO]   -------此次采集完整数据为:43914
+[woss_client] -2017-09-15 10:44:50,690 [INFO]   -------此次采集不完整数据为:502
+[woss_client] -2017-09-15 10:44:50,690 [INFO]   -------进行传输时加载备份数据.....
+[woss_client] -2017-09-15 10:44:50,690 [INFO]   -------开始发送数据.....
+[woss_client] -2017-09-15 10:46:58,911 [INFO]   -------开始采集数据
+[woss_client] -2017-09-15 10:46:58,911 [INFO]   -------读取备份数据
+[woss_client] -2017-09-15 10:46:58,926 [INFO]   -------这一次采集的数据要跳过的字符:4100934
+[woss_client] -2017-09-15 10:46:59,004 [INFO]   -------上一次采集遗留的不完整数据大小为：502
+[woss_client] -2017-09-15 10:46:59,004 [INFO]   -------对不是同一天上下线的用户进行处理
+[woss_client] -2017-09-15 10:46:59,004 [INFO]   -------开始备份数据.....
+[woss_client] -2017-09-15 10:46:59,082 [INFO]   -------此次采集完整数据为:0
+[woss_client] -2017-09-15 10:46:59,082 [INFO]   -------此次采集不完整数据为:502
+[woss_client] -2017-09-15 10:46:59,082 [INFO]   -------进行传输时加载备份数据.....
+[woss_client] -2017-09-15 10:46:59,082 [INFO]   -------开始发送数据.....
+[woss_client] -2017-09-15 10:47:00,112 [WARN]   -------发送数据失败.....
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:208)
+	at com.briup.client.impl.ClientImpl.send(ClientImpl.java:43)
+	at com.briup.main.ClientMain.main(ClientMain.java:13)
+[woss_client] -2017-09-15 10:48:13,688 [INFO]   -------开始采集数据
+[woss_client] -2017-09-15 10:48:13,688 [INFO]   -------读取备份数据
+[woss_client] -2017-09-15 10:48:13,953 [INFO]   -------对不是同一天上下线的用户进行处理
+[woss_client] -2017-09-15 10:48:14,031 [INFO]   -------开始备份数据.....
+[woss_client] -2017-09-15 10:48:14,094 [INFO]   -------此次采集完整数据为:43914
+[woss_client] -2017-09-15 10:48:14,094 [INFO]   -------此次采集不完整数据为:502
+[woss_client] -2017-09-15 10:48:14,094 [INFO]   -------进行传输时加载备份数据.....
+[woss_client] -2017-09-15 10:48:14,094 [INFO]   -------开始发送数据.....
+[woss_client] -2017-09-15 10:49:57,538 [INFO]   -------开始采集数据
+[woss_client] -2017-09-15 10:49:57,538 [INFO]   -------读取备份数据
+[woss_client] -2017-09-15 10:49:57,819 [INFO]   -------对不是同一天上下线的用户进行处理
+[woss_client] -2017-09-15 10:49:57,897 [INFO]   -------开始备份数据.....
+[woss_client] -2017-09-15 10:49:57,959 [INFO]   -------此次采集完整数据为:43914
+[woss_client] -2017-09-15 10:49:57,959 [INFO]   -------此次采集不完整数据为:502
+[woss_client] -2017-09-15 10:49:57,959 [INFO]   -------进行传输时加载备份数据.....
+[woss_client] -2017-09-15 10:49:57,959 [INFO]   -------开始发送数据.....
+[woss_client] -2017-09-15 10:57:30,131 [INFO]   -------开始采集数据
+[woss_client] -2017-09-15 10:57:30,131 [INFO]   -------读取备份数据
+[woss_client] -2017-09-15 10:57:30,427 [INFO]   -------对不是同一天上下线的用户进行处理
+[woss_client] -2017-09-15 10:57:30,505 [INFO]   -------开始备份数据.....
+[woss_client] -2017-09-15 10:57:30,567 [INFO]   -------此次采集完整数据为:43914
+[woss_client] -2017-09-15 10:57:30,567 [INFO]   -------此次采集不完整数据为:502
+[woss_client] -2017-09-15 10:57:30,567 [INFO]   -------进行传输时加载备份数据.....
+[woss_client] -2017-09-15 10:57:30,567 [INFO]   -------开始发送数据.....
+[woss_client] -2017-09-15 11:03:06,325 [INFO]   -------开始采集数据
+[woss_client] -2017-09-15 11:03:06,325 [INFO]   -------读取备份数据
+[woss_client] -2017-09-15 11:03:06,621 [INFO]   -------对不是同一天上下线的用户进行处理
+[woss_client] -2017-09-15 11:03:06,699 [INFO]   -------开始备份数据.....
+[woss_client] -2017-09-15 11:03:06,761 [INFO]   -------此次采集完整数据为:43914
+[woss_client] -2017-09-15 11:03:06,761 [INFO]   -------此次采集不完整数据为:502
+[woss_client] -2017-09-15 11:03:06,761 [INFO]   -------进行传输时加载备份数据.....
+[woss_client] -2017-09-15 11:03:06,761 [INFO]   -------开始发送数据.....
+[woss_client] -2017-09-15 11:09:33,067 [INFO]   -------开始采集数据
+[woss_client] -2017-09-15 11:09:33,067 [INFO]   -------读取备份数据
+[woss_client] -2017-09-15 11:09:33,363 [INFO]   -------对不是同一天上下线的用户进行处理
+[woss_client] -2017-09-15 11:09:33,441 [INFO]   -------开始备份数据.....
+[woss_client] -2017-09-15 11:09:33,503 [INFO]   -------此次采集完整数据为:43914
+[woss_client] -2017-09-15 11:09:33,503 [INFO]   -------此次采集不完整数据为:502
+[woss_client] -2017-09-15 11:09:33,503 [INFO]   -------进行传输时加载备份数据.....
+[woss_client] -2017-09-15 11:09:33,503 [INFO]   -------开始发送数据.....
+[woss_client] -2017-09-15 14:51:23,801 [INFO]   -------开始采集数据
+[woss_client] -2017-09-15 14:51:23,803 [INFO]   -------读取备份数据
+[woss_client] -2017-09-15 14:51:23,811 [INFO]   -------这一次采集的数据要跳过的字符:4100934
+[woss_client] -2017-09-15 14:51:23,896 [INFO]   -------上一次采集遗留的不完整数据大小为：502
+[woss_client] -2017-09-15 14:51:23,897 [INFO]   -------对不是同一天上下线的用户进行处理
+[woss_client] -2017-09-15 14:51:23,906 [INFO]   -------开始备份数据.....
+[woss_client] -2017-09-15 14:51:23,955 [INFO]   -------此次采集完整数据为:0
+[woss_client] -2017-09-15 14:51:23,955 [INFO]   -------此次采集不完整数据为:502
+[woss_client] -2017-09-15 14:51:23,955 [INFO]   -------进行传输时加载备份数据.....
+[woss_client] -2017-09-15 14:51:23,955 [INFO]   -------开始发送数据.....
+[woss_client] -2017-09-15 15:10:42,032 [INFO]   -------开始采集数据
+[woss_client] -2017-09-15 15:10:42,034 [INFO]   -------读取备份数据
+[woss_client] -2017-09-15 15:10:42,042 [INFO]   -------这一次采集的数据要跳过的字符:4100934
+[woss_client] -2017-09-15 15:10:42,128 [INFO]   -------上一次采集遗留的不完整数据大小为：502
+[woss_client] -2017-09-15 15:10:42,129 [INFO]   -------对不是同一天上下线的用户进行处理
+[woss_client] -2017-09-15 15:10:42,139 [INFO]   -------开始备份数据.....
+[woss_client] -2017-09-15 15:10:42,202 [INFO]   -------此次采集完整数据为:0
+[woss_client] -2017-09-15 15:10:42,202 [INFO]   -------此次采集不完整数据为:502
+[woss_client] -2017-09-15 15:10:42,203 [INFO]   -------进行传输时加载备份数据.....
+[woss_client] -2017-09-15 15:10:42,203 [INFO]   -------开始发送数据.....

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration SYSTEM "configuration.dtd">
+<configuration>
+    <logger class="com.briup.logger.WossLogger">
+        <propertiesFile>gather/src/main/resources/log4j.properties</propertiesFile>
+    </logger>
+    <gather class="com.briup.client.WossGather">
+        <sourceData>gather/data/radwtmp_test</sourceData>
+        <canliushujuFile>canliushuju</canliushujuFile>
+    </gather>
+
+    <client class="com.briup.client.WossClient">
+        <host>127.0.0.1</host>
+        <port>6666</port>
+        <tempFile>client.bak</tempFile>
+    </client>
+
+    <dbStore class="com.briup.server.WossDBStore"></dbStore>
+
+    <server class="com.briup.server.WossServer">
+        <server_tempFile>server.bak</server_tempFile>
+    </server>
+
+    <backUp class="com.briup.backup.WossBackUp">
+        <path>gather/data/</path>
+    </backUp>
+
+</configuration>
