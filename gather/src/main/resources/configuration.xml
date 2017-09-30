@@ -5,7 +5,7 @@
         <propertiesFile>gather/src/main/resources/log4j.properties</propertiesFile>
     </logger>
     <gather class="com.briup.client.WossGather">
-        <sourceData>gather/data/radwtmp_test</sourceData>
+        <sourceData>gather/data/woss.data</sourceData>
         <canliushujuFile>canliushuju</canliushujuFile>
     </gather>
 
@@ -21,8 +21,8 @@
         <server_tempFile>server.bak</server_tempFile>
     </server>
 
-    <backUp class="com.briup.backup.WossBackUp">
+    <backUP class="com.briup.backup.WossBackUp">
         <path>gather/data/</path>
-    </backUp>
+    </backUP>
 
 </configuration>

@@ -1,6 +1,5 @@
 package com.briup.client;
 
-import com.briup.common.WossConfiguration;
 import com.briup.util.BIDR;
 import com.briup.util.BackUP;
 import com.briup.util.Configuration;
@@ -14,6 +13,10 @@ import java.net.Socket;
 import java.util.Collection;
 import java.util.Properties;
 
+/**
+ * 客户端模块
+ * @author Nick
+ */
 public class WossClient implements Client,ConfigurationAWare {
     private String host;
     private int port;
@@ -23,12 +26,15 @@ public class WossClient implements Client,ConfigurationAWare {
     private Gather gather;
     private BackUP backUP;
     private Collection<BIDR> bidrs;
-    private boolean flag;
 
     public Collection<BIDR> getBidrs() {
         return bidrs;
     }
 
+    /**
+     * @param collection BIDR类对象集合
+     * @throws Exception
+     */
     @Override
     public void send(Collection<BIDR> collection) throws Exception {
         Socket socket = new Socket(host,port);
@@ -54,6 +60,10 @@ public class WossClient implements Client,ConfigurationAWare {
         logger.info("传输完成");
     }
 
+    /**
+     * 初始化方法
+     * @param properties
+     */
     @Override
     public void init(Properties properties) {
         host = properties.getProperty("host");
@@ -61,6 +71,10 @@ public class WossClient implements Client,ConfigurationAWare {
         port = Integer.parseInt(properties.getProperty("port"));
     }
 
+    /**
+     * 获取配置模块方法
+     * @param configuration
+     */
     @Override
     public void setConfiguration(Configuration configuration) {
         try {

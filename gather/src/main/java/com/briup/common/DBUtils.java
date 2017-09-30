@@ -6,6 +6,9 @@ import javax.sql.rowset.CachedRowSet;
 import java.sql.*;
 import java.util.Properties;
 
+/**
+ * 数据库操作类
+ */
 public class DBUtils {
     private static DBUtils dbu;
     private static Properties  properties;
@@ -33,11 +36,22 @@ public class DBUtils {
         }
     }
 
+    /**
+     * 获取连接对象
+     * @return SQL的connection对象
+     * @throws SQLException
+     */
     public static Connection getConnection() throws SQLException {
         String url = properties.getProperty("url");
         return DriverManager.getConnection(url,properties);
     }
 
+    /**
+     * 关闭资源
+     * @param resultSet
+     * @param statement
+     * @param connection
+     */
     public static void close(ResultSet resultSet, Statement statement, Connection connection){
         try { if (resultSet != null) resultSet.close(); } catch (SQLException e) { e.printStackTrace(); }
         try { if (statement != null) statement.close(); } catch (SQLException e) { e.printStackTrace(); }
@@ -45,6 +59,14 @@ public class DBUtils {
     }
 
     //增删改操作
+
+    /**
+     * 增删改操作集成方法
+     * @param sql sql语句
+     * @param params 参数
+     * @return 影响行数
+     * @throws SQLException
+     */
     public static int update(String sql,Object...params) throws SQLException {
         int num = 0;
         Connection connection = null;
@@ -65,6 +87,13 @@ public class DBUtils {
         return num;
     }
 
+    /**
+     * 查询方法
+     * @param sql SQL方法
+     * @param params 查询的参数
+     * @return 缓存的结果集
+     * @throws SQLException
+     */
     public static CachedRowSet query(String sql,Object...params) throws SQLException {
         Connection connection = null;
         PreparedStatement ps = null;

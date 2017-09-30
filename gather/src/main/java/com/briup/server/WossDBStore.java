@@ -22,6 +22,7 @@ public class WossDBStore implements DBStore,ConfigurationAWare {
         Iterator<BIDR> iterator = collection.iterator();
 
         logger.info("准备往数据库发送"+collection.size()+"条数据");
+        logger.fatal(collection.size()+"");
 //        while (iterator.hasNext()){
 //            BIDR bidr = iterator.next();
 //            String sql = "insert into t_detail_1 values(?,?,?,?,?,?)";

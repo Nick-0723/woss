@@ -54,9 +54,7 @@ public class WossServer implements Server,ConfigurationAWare {
     }
 
     @Override
-    public void shutdown() {
-
-    }
+    public void shutdown() {}
 
     @Override
     public void init(Properties properties) {

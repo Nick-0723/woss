@@ -1,4 +1,4 @@
-<!ELEMENT configuration (logger?,gather?,client?,dbStore?,server?,backUp?)>
+<!ELEMENT configuration (logger?,gather?,client?,dbStore?,server?,backUP?)>
     <!ELEMENT logger (propertiesFile)>
     <!ATTLIST logger class CDATA #REQUIRED>
         <!ELEMENT propertiesFile (#PCDATA)>
@@ -21,6 +21,6 @@
     <!ATTLIST server class CDATA #REQUIRED>
         <!ELEMENT server_tempFile (#PCDATA)>
 
-    <!ELEMENT backUp (path)>
-    <!ATTLIST backUp class CDATA #REQUIRED>
+    <!ELEMENT backUP (path)>
+    <!ATTLIST backUP class CDATA #REQUIRED>
         <!ELEMENT path (#PCDATA)>
