@@ -31,11 +31,7 @@
             <version>1.6.1</version>
         </dependency>
         
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
-        </dependency>
+
         <!--<dependency>-->
             <!--<groupId>com.briup</groupId>-->
             <!--<artifactId>woss-interface</artifactId>-->
